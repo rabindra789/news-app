@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 app.post('/refresh', refreshTokenMiddleware);
 
-app.use('/api/users', userRoute);
+app.use('/', userRoute);
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`);
