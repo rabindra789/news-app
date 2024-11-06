@@ -1,23 +1,10 @@
 const mongoose = require("mongoose");
 
-const articleSchema = new mongoose.Schema(
-    {
-        title: {
-            type: String,
-            required: true,
-        },
-        description: String,
-        url: {
-            type: String,
-            required: true,
-            unique: true,
-        },
-        source: String,
-        publishedAt: Date,
-        content: String,
-        imageUrl: String,
-    },
-    { timestamps: true }
-);
+const articleSchema = new mongoose.Schema({
+    title: String,
+    content: String,
+    url: String,
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+});
 
 module.exports = mongoose.model("Article", articleSchema);
