@@ -63,7 +63,7 @@
 
 ## Contributing
 
-Feel free to open issues or submit pull requests to contribute to the project. Please ensure your contributions adhere to the project's coding style and standards.
+Feel free to open issues or submit pull requests to contribute to the project. Please ensure your contributions add here to the project's coding style and standards.
 
 ## Licence
 This project is licenced under the ISC Licence - see the [LICENSE](LICENCE) file for details.
